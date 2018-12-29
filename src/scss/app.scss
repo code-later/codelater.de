@@ -27,14 +27,14 @@ $spacers: map-merge(
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
-@import "bootstrap/scss/code";
+/* @import "bootstrap/scss/code"; */
 @import "bootstrap/scss/grid";
-@import "bootstrap/scss/tables";
-@import "bootstrap/scss/forms";
+/* @import "bootstrap/scss/tables"; */
+/* @import "bootstrap/scss/forms"; */
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 /* @import "bootstrap/scss/dropdown"; */
-@import "bootstrap/scss/button-group";
+/* @import "bootstrap/scss/button-group"; */
 /* @import "bootstrap/scss/input-group"; */
 /* @import "bootstrap/scss/custom-forms"; */
 @import "bootstrap/scss/nav";
@@ -46,8 +46,8 @@ $spacers: map-merge(
 /* @import "bootstrap/scss/jumbotron"; */
 /* @import "bootstrap/scss/alert"; */
 /* @import "bootstrap/scss/progress"; */
-@import "bootstrap/scss/media";
-@import "bootstrap/scss/list-group";
+/* @import "bootstrap/scss/media"; */
+/* @import "bootstrap/scss/list-group"; */
 /* @import "bootstrap/scss/close"; */
 /* @import "bootstrap/scss/modal"; */
 /* @import "bootstrap/scss/tooltip"; */
@@ -70,13 +70,14 @@ $spacers: map-merge(
 }
 
 .page-header {
-
   height: 600px;
+  min-height: 60vh;
   background-image: url("/images/polygon.svg"), radial-gradient(circle at left bottom, rgba(190,29,119,1) 0%, rgba(237,69,139,1) 100%);
 
-  background-position: -10% -50%, left;
-  background-size: 50% auto, cover;
+  background-position: -15% 90%, left;
+  background-size: 1000px auto, cover;
   background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
   position: relative;
   background-blend-mode: multiply;
 
@@ -99,8 +100,29 @@ section {
   }
 }
 
+.about-me-text {
+  margin: 0;
+  border-left: 1px solid $dark;
+}
+
+#skills-and-technologies {
+  background-image: url("/images/polygon.svg"), radial-gradient(circle at left bottom, rgba(190,29,119,1) 0%, rgba(237,69,139,1) 100%);
+
+  background-position: -10% 90%, left;
+  background-size: 1000px auto, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
+  position: relative;
+  background-blend-mode: multiply;
+}
+
 footer {
-  background-image: url("/images/header.png");
-  background-size: cover;
-  background-position: bottom;
+  background-image: url("/images/polygon.svg"), radial-gradient(circle at left bottom, rgba(190,29,119,1) 0%, rgba(237,69,139,1) 100%);
+
+  background-position: -10% 90%, left;
+  background-size: 1000px auto, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
+  position: relative;
+  background-blend-mode: multiply;
 }
