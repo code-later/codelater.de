@@ -12,7 +12,9 @@ $btn-font-size-lg: 2.25rem;
 $border-radius-lg: 0.6rem;
 $font-size-base: 1.2rem;
 
-$link-color: $white;
+$link-color-dark: $white;
+$link-hover-color-dark: darken($link-color-dark, 15%) !default;
+$link-color: $dark;
 $link-decoration: underline;
 
 @import "bootstrap/scss/functions";
@@ -120,6 +122,14 @@ $spacers: map-merge(
   background-attachment: fixed, fixed;
   position: relative;
   background-blend-mode: multiply;
+
+  a {
+    color: $link-color-dark;
+
+    &:hover {
+      color: $link-hover-color-dark;
+    }
+  }
 }
 
 .page-header-claim {
