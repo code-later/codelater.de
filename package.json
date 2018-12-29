@@ -1,0 +1,23 @@
+{
+  "name": "codelater.de",
+  "version": "1.0.0",
+  "description": "Portfolio website for Dirk Breuer",
+  "main": "faucet.config.js",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "faucet-pipeline-sass": "^1.1.0",
+    "faucet-pipeline-static": "^1.0.0"
+  },
+  "scripts": {
+    "compile": "faucet --compact --fingerprint",
+    "start": "ruby -run -ehttpd public -p8000",
+    "watch": "faucet --watch"
+  },
+  "keywords": [
+    "professional",
+    "portfolio"
+  ],
+  "author": "Dirk Breuer",
+  "license": "MIT",
+  "devDependencies": {}
+}

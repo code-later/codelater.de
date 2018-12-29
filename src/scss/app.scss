@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+// Variables
+$font-family-sans-serif: "Fira Sans";
+
+$white :#F5F4FF;
+
+$primary: #212529;
+$secondary: #048500;
+$dark: #BE1D77;
+$btn-font-size-lg: 2.25rem;
+$border-radius-lg: 0.6rem;
+$font-size-base: 1.2rem;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$spacers: map-merge(
+  (
+    6: ($spacer * 5)
+  ),
+  $spacers
+);
+
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+/* @import "bootstrap/scss/dropdown"; */
+@import "bootstrap/scss/button-group";
+/* @import "bootstrap/scss/input-group"; */
+/* @import "bootstrap/scss/custom-forms"; */
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+/* @import "bootstrap/scss/breadcrumb"; */
+/* @import "bootstrap/scss/pagination"; */
+/* @import "bootstrap/scss/badge"; */
+/* @import "bootstrap/scss/jumbotron"; */
+/* @import "bootstrap/scss/alert"; */
+/* @import "bootstrap/scss/progress"; */
+@import "bootstrap/scss/media";
+@import "bootstrap/scss/list-group";
+/* @import "bootstrap/scss/close"; */
+/* @import "bootstrap/scss/modal"; */
+/* @import "bootstrap/scss/tooltip"; */
+/* @import "bootstrap/scss/popover"; */
+/* @import "bootstrap/scss/carousel"; */
+@import "bootstrap/scss/utilities";
+/* @import "bootstrap/scss/print"; */
+
+// Custom stuff
+#navbar-toggle-cbox:checked ~ .collapse {
+  display: block;
+}
+
+#navbar-toggle-cbox {
+  display: none;
+}
+
+.card {
+  border: none;
+}
+
+.page-header {
+
+  height: 600px;
+  background-image: url("/images/polygon.svg"), radial-gradient(circle at left bottom, rgba(190,29,119,1) 0%, rgba(237,69,139,1) 100%);
+
+  background-position: -10% -50%, left;
+  background-size: 50% auto, cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-blend-mode: multiply;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.page-header-claim {
+  height: 400px;
+}
+
+.page-header-me_provides {
+  line-height: 1.4;
+}
+
+section {
+  &.bg-dark {
+    background-image: url("/images/header.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+footer {
+  background-image: url("/images/header.png");
+  background-size: cover;
+  background-position: bottom;
+}
