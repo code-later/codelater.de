@@ -1,0 +1,7 @@
+body:before {
+	content: "\26a0  CSS Error: Error: sass.types.Error is not a constructor background-image: asset-url('/images/polygon.svg'), radial-gradient(circle at left bottom, rgba(190,29,119,1) 0%, rgba(237,69,139,1) 100%); ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ src/scss/app.scss 109:21 root stylesheet";
+	font-weight: bold;
+	display: block;
+	border: 5px solid red;
+	padding: 5px;
+}
