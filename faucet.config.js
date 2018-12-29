@@ -1,17 +1,19 @@
 module.exports = {
   sass: [{
     source: "./src/scss/app.scss",
-    target: "./public/app.css"
+    target: "./dist/app.css"
   }],
-  static: [
-    {
-      source: "./src/images",
-      target: "./public/images",
-    },
-    {
-      source: "./src/html",
-      target: "./public",
-    }
-  ],
+  nunjucks: [{
+    source: "./src/html/index.njk",
+    target: "./dist/index.html"
+  }],
+  static: [{
+    source: "./src/images",
+    target: "./dist/images",
+  }],
+  manifest: {
+    target: "./dist/manifest.json",
+    webRoot: "./dist"
+  },
   watchDirs: ["./src"]
 };
