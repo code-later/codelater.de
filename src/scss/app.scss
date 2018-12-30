@@ -92,21 +92,22 @@ $spacers: map-merge(
 .about-dirk {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   img {
     margin-bottom: map-get($spacers, 3);
+    min-width: 200px;
   }
 }
 
 @include media-breakpoint-up(md) {
   .about-dirk {
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 
     img {
       margin-right: map-get($spacers, 3);
+      margin-bottom: 0;
     }
   }
 
