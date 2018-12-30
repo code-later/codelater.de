@@ -47,7 +47,7 @@ $spacers: map-merge(
 @import "bootstrap/scss/card";
 /* @import "bootstrap/scss/breadcrumb"; */
 /* @import "bootstrap/scss/pagination"; */
-/* @import "bootstrap/scss/badge"; */
+@import "bootstrap/scss/badge";
 /* @import "bootstrap/scss/jumbotron"; */
 /* @import "bootstrap/scss/alert"; */
 /* @import "bootstrap/scss/progress"; */
@@ -68,6 +68,10 @@ $spacers: map-merge(
 
 #navbar-toggle-cbox {
   display: none;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 .card {
@@ -132,14 +136,30 @@ $spacers: map-merge(
   }
 }
 
-.page-header-claim {
-  height: 400px;
+.display-4 {
+  font-size: 3rem;
 }
 
 .page-header-me_provides {
   line-height: 1.4;
+  font-size: 2rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+
+  .page-header-me_provides {
+    font-size: 2.4rem;
+  }
 }
 
 footer {
   line-height: 1.1;
+}
+
+.skill-list {
+  flex-basis: 0;
+  flex-grow: 1;
 }
